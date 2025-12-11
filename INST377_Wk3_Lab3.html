@@ -1,0 +1,115 @@
+<!--
+Requirements (30 Points):
+
+    1) Page must use an External CSS File - 1 pt
+The Page must have the following Sections 
+    2) Header + Footer 
+        DONE a. This should use the same styling, aka same div class - 2 pt
+        DONE b. Header should have an H1 - 1pt
+        c. Text must be aligned to the center of the page - 1 pt
+        d. that Must be different color than the rest of the page - 1 pt
+        e. They should have Margin + Padding - 1 pt
+    3) Body
+        a. Main Content (This must use a percentage width) - 2 pt
+        b. Sidebar (This must use a percentage width)
+            i. The color must be different form the rest of the page - 2 pt
+        c. Both Main Content and sidebar must be within one Line 
+           (the Sidebar shouldn't be on a new line vs the main content) - 2 pt
+        d. Both must have Margin + Padding - 2 pt
+        e. The whole Body should use a custom font-family, it is your choice what that is - 1pt
+    4) In the Main Content there must be a form
+        a. The form must have a Name Label - 1pt
+        b. The form must have a Select that chooses, Rock - Paper - Scissors - 1 pt
+        c. The form must require the name - 1 pt
+        d. When you focus on the Name Text box the width of the textbox must increase, 
+           then when you “un-focus” it should go back to it’s original length - 2 pt
+    5) SideBar
+        a. The Sidebar must have Rules on how to Play Rock-Paper-Scissors - 1 pt
+        b. When you hover over the Sidebar it should change the background color - 2 pts
+    6) Nav
+        a. The Nav must have 3 elements, lined up horizontally and with no bullet points - 3 pt
+        b. The Nav elements must have a hover state - 1 pt
+        c. The Nav elements when clicked should open up a different site (can be any site) - 2 pts
+
+-->
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="INST377_Wk3_Lab3.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header_footer">
+      <!--2)a.-->
+      <h1>Rock Paper Scissors</h1>
+      <!--2)b.-->
+    </header>
+    <!-- Nav Section -->
+    <nav>
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Joker_(The_Dark_Knight)"
+            >Wanna know how I got these scars?</a
+          >
+        </li>
+        <li>
+          <a href="https://batman.fandom.com/wiki/Two-Face_(Nolanverse)"
+            >You either die a hero, or live long enough to see yourself become
+            the villain</a
+          >
+        </li>
+        <li>
+          <a href="https://batman.fandom.com/wiki/The_Riddler_(Schumacherverse)"
+            >Riddle me this...</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container_main-sidebar">
+      <!-- Sidebar Section -->
+      <aside class="sidebar">
+        <h2>Rock-Paper-Scissors Rules:</h2>
+        <h3>Game Description:</h3>
+        <p>
+          You know the deal. Paper covers Rock. Rock breaks Scissors. Scissors
+          cuts Paper. Lock in.
+        </p>
+        <h3>Game Procedure:</h3>
+        <p>
+          1. Pick Rock, Paper, or Scissors <br />
+          2. The computer randomly picks Rock, Paper, or Scissors as well <br />
+          3. Click "Shoot!" <br />
+          4. Whoever wins has a claim to the other's firstborn child (and Gotham
+          City!) <br />
+        </p>
+      </aside>
+      <!-- Main Content Section-->
+      <main class="main-content">
+        <h2>Playing the Game:</h2>
+        <!-- Form -->
+        <form>
+          <label for="PlayerName">Player Name:</label>
+          <input type="text" id="PlayerName" name="PlayerName" required />
+          <br />
+          <label for="choice">Choose.</label>
+          <select id="choice" name="choice">
+            <option value="rock">ROCK</option>
+            <option value="paper">PAPER</option>
+            <option value="scissors">SCISSORS</option>
+          </select>
+          <br />
+          <input type="submit" value="Shoot!" />
+        </form>
+      </main>
+    </div>
+    <footer class="header_footer">
+      <!--2)a.-->
+      <p>
+        Copyright 2025 JR2F Inc. <br />
+        all the best (and worst) <br />
+        Joker, Riddler, & Two-Face
+      </p>
+    </footer>
+  </body>
+</html>
