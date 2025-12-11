@@ -1,0 +1,103 @@
+/*
+Requirements (30 Points):
+
+    1) Page must use an External CSS File - 1 pt
+The Page must have the following Sections 
+    2) Header + Footer 
+        a. This should use the same styling, aka same div class - 2 pt
+        b. Header should have an H1 - 1pt
+        c. Text must be aligned to the center of the page - 1 pt
+        d. that Must be different color than the rest of the page - 1 pt
+        e. They should have Margin + Padding - 1 pt
+    3) Body
+        a. Main Content (This must use a percentage width) - 2 pt
+        b. Sidebar (This must use a percentage width)
+            i. The color must be different form the rest of the page - 2 pt
+        c. Both Main Content and sidebar must be within one Line 
+           (the Sidebar shouldn't be on a new line vs the main content) - 2 pt
+        d. Both must have Margin + Padding - 2 pt
+        e. The whole Body should use a custom font-family, it is your choice what that is - 1pt
+    4) In the Main Content there must be a form
+        a. The form must have a Name Label - 1pt
+        b. The form must have a Select that chooses, Rock - Paper - Scissors - 1 pt
+        c. The form must require the name - 1 pt
+        d. When you focus on the Name Text box the width of the textbox must increase, 
+           then when you “un-focus” it should go back to it’s original length - 2 pt
+    5) SideBar
+        a. The Sidebar must have Rules on how to Play Rock-Paper-Scissors - 1 pt
+        b. When you hover over the Sidebar it should change the background color - 2 pts
+    6) Nav
+        a. The Nav must have 3 elements, lined up horizontally and with no bullet points - 3 pt
+        b. The Nav elements must have a hover state - 1 pt
+        c. The Nav elements when clicked should open up a different site (can be any site) - 2 pts
+*/
+
+/* Header & Footer Sections */
+.header_footer {
+    background-color: #36454F;
+    color: #e35336;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+}
+
+/* Nav Section */
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* makes items horizontal */
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #783F04;
+}
+nav a:hover {
+    background-color: #FFBE42;
+    color: #CC4e5c;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+/* Body: Main Content & Sidebar Sections */
+body {
+    background-color: #5B7C99;
+    color: #18391A;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+}
+.container_main-sidebar {
+    display: flex; /* double check if this is correct */
+}
+    /* Main Content */
+.main-content {
+    width: 70%; /* has to be percentage */
+    margin: 10px;
+    padding: 20px;
+}
+    /* Sidebar */
+.sidebar {
+    width: 25%; /* has to be percentage */
+    background-color: #f4dec2;
+    color: #228b22;
+    margin: 10px;
+    padding: 20px;
+}
+.sidebar:hover {
+    background-color: #50c878;
+    color: #18391a;
+}
+    /* Form */
+input[type="text"] {
+    width: 200px;
+    transition: width 0.3s;
+}
+input[type="text"]:focus {
+    width: 300px; /* Larger width when focused */
+}

@@ -1,0 +1,46 @@
+/* Water, Life, Soil & Sky Style Sheet */
+/* by Matthew Gormley */
+
+
+/* Lab 2 Page 1 Styling (User Research Intake Form)*/
+/* Requirement Pg 1 2)a.: background color */
+body.user_research_intake {
+    background-color: #e8dcc4;
+}
+
+/* Requirement Pg 1 2)d.: div wrapper styling */
+div {
+    margin: 20px; /* 2)d.i */
+}
+div label, div legend {
+    font-size: 18px; /* 2)d.ii */
+}
+
+/* Requirement Pg 1 2)b.: submit button styling */
+input[type="submit"] {
+    background-color: #85c1e9;
+    margin: 10px;
+}
+/* Requirement Pg 1 2)c.: hover effect on submit button */
+input[type="submit"]:hover {
+    background-color: #21618c;
+    color: #e8dcc4;
+}
+
+/* Lab 2 Page 2 Styling (User Research Intake Form Page 2) */
+/* Requirement Pg 2 3) */
+body.user_research_intake-2 {
+    background-color: #1e8449;
+}
+
+/* Requirement Pg 2 1) */
+body.user_research_intake-2 {
+    text-align: center;
+}
+
+/* Requirement Pg 2 2) */
+body.user_research_intake-2 img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
